@@ -8,3 +8,7 @@ Monitoring Network Everything Connected Laboratory System Software Defined Netwo
 ```bash
 $ git clone https://github.com/omodoong/ev-monsys.git
 ```
+
+## License
+It is released under the MIT license. See
+[LICENSE](https://github.com/omodoong/ev-monsys/blob/master/LICENSE.

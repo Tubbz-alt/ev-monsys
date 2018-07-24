@@ -1,0 +1,7 @@
+--- add text in file /etc/rc.local ---
+
+#!/bin/sh -e
+sudo ifconfig eth0 10.11.12.1
+./node_exporter
+./prometheus --config.file="startx.yaml"
+sudo service grafana-server start

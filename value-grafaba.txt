@@ -1,0 +1,14 @@
+# Throughtput in
+rate(node_network_receive_bytes_total{instance='localhost:9100'}[30s])
+
+# Throughtput out
+rate(node_network_transmit_bytes_total{instance='localhost:9100'}[30s])
+
+# CPU
+rate(node_cpu_seconds_total{instance="localhost:9100",mode="user"}[15m]) * 100
+
+# RAM
+node_memory_MemTotal_bytes-(node_memory_Buffers_bytes+node_memory_MemFree_bytes+node_memory_Cached_bytes)-(30*1000000)
+
+# Signal wifi (dbm)
+node_wifi_station_signal_dbm

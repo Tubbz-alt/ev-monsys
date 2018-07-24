@@ -1,0 +1,10 @@
+chmod +x node_exporter
+
+--- add text in file /etc/rc.local ---
+
+#!/bin/sh -e
+sudo ifconfig eth0 10.11.12.2
+
+./node_exporter &
+sudo /usr/local/share/openvswitch/scripts/ovs-ctl start
+sudo ./start-ovs.sh
